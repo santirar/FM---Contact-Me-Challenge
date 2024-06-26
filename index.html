@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+</head>
+<body>
+  <main>
+    
+      <section class="card-form">
+        <h1>Contact Us</h1>
+      
+        <form>
+          
+          <!-- Con este div logre que la caja de "last name" se ubique al costado de la de "first name" -->
+            <div class="name-caja">
+            <!-- Este div corresponde a la caja que contiene el titulo y x debajo la caja para completar (separadas x un div que manda el espacio para completar x debajo de su titulo) -->
+              <div class="name">
+                <div>
+                  <label for="nombre">First Name *</label>
+                  <div>
+                    <input type="text" id="nombre" class="focus-input">
+                  </div>
+                </div>
+              </div>
+              <div class="last">
+                <div>
+                  <label for="apellido">Last Name *</label>
+                  <div>
+                    <input type="text" class="focus-input" id="apellido">
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="email-caja">
+            <div>
+              <label for="email">Email Adress *</label>
+              <div>
+                <input type="email" id="email">
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p>Query Type *</p>
+          </div>
+
+          <div class="query-caja">
+           
+            <div class="query">
+      
+              <div class="query-container focus-query">
+                <input type="radio" id="general-enquiry">
+                <label for="general-enquiry">General Enquiry</label>
+                </div>
+                
+                
+              <div class="query-container">
+                <input type="radio" id="support-enquiry">
+                <label for="support-enquiry">Support Enquiry</label>
+              </div>   
+
+            </div>
+
+          </div>
+
+          <div class="message-caja">
+            <p>Message *</p>
+            <div>
+              <label for="message"></label>
+              <div>
+                <textarea name="message" id="message"></textarea>
+              </div>
+          </div>
+
+          <div class="terms">
+            <input type="checkbox" id="cbx2">
+            <label for="cbx2">I consent to being contacted by the team</label>
+          </div>
+
+        </form>
+
+        <button class="btn">Submit</button>
+      </section>   
+        
+      
+        <!-- Email Address
+        Please enter a valid email address
+        This field is required
+      
+        Query Type
+        General Enquiry
+        Support Request
+        Please select a query type
+      
+        Message
+        This field is required
+      
+        I consent to being contacted by the team
+        To submit this form, please consent to being contacted
+      
+        Submit
+      
+    
+        Message Sent!
+        Thanks for completing the form. We'll be in touch soon! -->
+      
+    
+  </main>
+</body>
+</html>
